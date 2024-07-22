@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ReactJS_textUtil_QRCode/static/css/main.2229b130.css",
-    "main.js": "/ReactJS_textUtil_QRCode/static/js/main.8716dd80.js",
+    "main.css": "/ReactJS_textUtil_QRCode/static/css/main.cd49cb10.css",
+    "main.js": "/ReactJS_textUtil_QRCode/static/js/main.f2594030.js",
     "static/js/453.6a1aaf01.chunk.js": "/ReactJS_textUtil_QRCode/static/js/453.6a1aaf01.chunk.js",
     "index.html": "/ReactJS_textUtil_QRCode/index.html",
-    "main.2229b130.css.map": "/ReactJS_textUtil_QRCode/static/css/main.2229b130.css.map",
-    "main.8716dd80.js.map": "/ReactJS_textUtil_QRCode/static/js/main.8716dd80.js.map",
+    "main.cd49cb10.css.map": "/ReactJS_textUtil_QRCode/static/css/main.cd49cb10.css.map",
+    "main.f2594030.js.map": "/ReactJS_textUtil_QRCode/static/js/main.f2594030.js.map",
     "453.6a1aaf01.chunk.js.map": "/ReactJS_textUtil_QRCode/static/js/453.6a1aaf01.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2229b130.css",
-    "static/js/main.8716dd80.js"
+    "static/css/main.cd49cb10.css",
+    "static/js/main.f2594030.js"
   ]
 }
