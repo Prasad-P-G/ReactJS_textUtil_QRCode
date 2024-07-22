@@ -62,12 +62,15 @@
   position: relative;
   top: -2px;
   font-size: 18px;
-  box-shadow: tomato;
+  box-shadow: tomato;  
 }
 li {
-  background-color: rgb(227, 13, 13);
+  background-color: tomato;
   padding-right: 1px;
+  padding-top: 2px;
+  width: 150px;
   margin-right: 5px;
+  text-align: center;
 }
 .btn:active{
   box-shadow: none !important;
