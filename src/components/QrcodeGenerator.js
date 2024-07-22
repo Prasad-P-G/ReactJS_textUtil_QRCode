@@ -27,6 +27,7 @@ export default function QrcodeGenerator() {
   const [CustomerId, setCustomerId] = useState("");
   const [inputValue, setInputValue] = useState("");
   const [encrptedData, setEncrptedData] = useState("");
+  const [decrptedData, setDecrptedData] = useState(""); // Decrypted data
 
   const currDate = new Date().toLocaleDateString();
   const currTime = new Date().toLocaleTimeString();
@@ -48,7 +49,8 @@ export default function QrcodeGenerator() {
 
   const ref = useRef();
 
-  const SECRET_PASS = "XkhZG4fW2t2W";
+  // const SECRET_PASS = "XkhZG4fW2t2W";
+  const SECRET_PASS = "prasad";
 
   const encryptData = () => {
     try {
@@ -61,6 +63,19 @@ export default function QrcodeGenerator() {
       //setErrorMessage("");
     } catch (error) {
       //setErrorMessage("Encryption failed. Please check your input.");
+    }
+  };
+
+  // Decrypt user input text
+  const decryptData = () => {
+    try {
+      const bytes = CryptoJS.AES.decrypt(encrptedData, SECRET_PASS);
+      const data = JSON.parse(bytes.toString(CryptoJS.enc.Utf8));
+      setDecrptedData(data);
+      console.log(decrptedData);
+      //setErrorMessage("");
+    } catch (error) {
+      //setErrorMessage("Decryption failed. Please check your input.");
     }
   };
 
@@ -138,23 +153,13 @@ export default function QrcodeGenerator() {
             content={() => ref.current}
             pageStyle={pageStyle}
           ></ReactToPrint>
-          {/* <button disabled={isActive} className="btn btn-primary mt-3 flex-d">
-            Print QR Code
-          </button> */}
-          {/* <button
-            disabled={isActive}
-            style={{
-              backgroundColor: "lightgrey",
-              color: "blue",
-              fontweight: "bold",
-              fontFamily: "Century Gothic",
-              border: "1px solid",
-            }}
-            className="btn btn-warning mt-3 flex-d"
-          >
-            Print QR Code
-          </button> */}
+
+          <button className="btn btn-primary mx-2 mt-3" onClick={decryptData}>
+            Decrypt
+          </button>
         </div>
+
+        <div></div>
       </div>
     </>
   );
