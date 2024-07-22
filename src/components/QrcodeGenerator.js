@@ -49,8 +49,15 @@ export default function QrcodeGenerator() {
 
   const ref = useRef();
 
-  // const SECRET_PASS = "XkhZG4fW2t2W";
-  const SECRET_PASS = "prasad";
+  const SECRET_PASS = "XkhZG4fW2t2W";
+  // const SECRET_PASS = "prasad";
+  // const SECRET_PASS =
+  //   date.getDate() +
+  //   date.getMonth() +
+  //   date.getFullYear() +
+  //   date.getHours() +
+  //   date.getMinutes() +
+  //   date.getSeconds();
 
   const encryptData = () => {
     try {
@@ -60,6 +67,7 @@ export default function QrcodeGenerator() {
       ).toString();
       setEncrptedData(data);
       console.log(data);
+      console.log(SECRET_PASS);
       //setErrorMessage("");
     } catch (error) {
       //setErrorMessage("Encryption failed. Please check your input.");
