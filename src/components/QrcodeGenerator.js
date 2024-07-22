@@ -84,7 +84,7 @@ export default function QrcodeGenerator() {
         className="container flex-d mt-5"
         style={{
           backgroundColor: "lightgray",
-          width: "50%",
+          width: "350px",
           height: "100%",
         }}
       >
@@ -96,7 +96,7 @@ export default function QrcodeGenerator() {
             value={inputValue}
             onChange={onIdChange}
             placeholder="Enter the Customer ID"
-            style={{ height: "30px" }}
+            style={{ height: "30px", width: "250px" }}
           ></input>
           <p
             className="mt-2"
@@ -104,7 +104,7 @@ export default function QrcodeGenerator() {
               backgroundColor: "lightseagreen",
               fontweight: "bold",
               fontFamily: "Century Gothic",
-              width: "400px",
+              width: "250px",
             }}
           >
             Your Id preview : {inputValue}
