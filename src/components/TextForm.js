@@ -63,10 +63,15 @@ export default function TextForm(props) {
           </button>
           <label htmlFor="myBox" className="form-label"></label>
           <textarea
+            style={{
+              border: "2px solid lighblue",
+              backgroundColor: "lightgray",
+            }}
             className="form-control"
             id="textAreaBox"
             value={text}
             rows="8"
+            placeholder="Enter text here"
             onChange={handleOnChange}
           ></textarea>
           <button className="btn btn-primary my-3 mx-3" onClick={handleUpClick}>

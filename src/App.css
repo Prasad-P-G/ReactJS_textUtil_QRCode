@@ -68,9 +68,12 @@ li {
   background-color: tomato;
   padding-right: 1px;
   padding-top: 2px;
-  width: 150px;
+  padding-bottom: 1px;
+  margin-bottom: 2px;
+  width: 140px;
   margin-right: 5px;
   text-align: center;
+  border: 1px solid grey;
 }
 .btn:active{
   box-shadow: none !important;
