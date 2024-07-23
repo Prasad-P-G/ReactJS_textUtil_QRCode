@@ -20,14 +20,9 @@
     
   "crypto-js": "^4.2.0",
   
-    
-<<<<<<< HEAD
   "gh-pages": "^6.1.1",
   
-    
-=======
->>>>>>> b423100866c3cdcc0de18b48bebbcd3041a0bbfc
-  "react": "^18.3.1",
+"react": "^18.3.1",
   
     
   "react-dom": "^18.3.1",
