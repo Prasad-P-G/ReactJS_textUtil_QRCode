@@ -24,6 +24,8 @@ export default function TextForm(props) {
     backgroundColor: "white",
   });
 
+  const [isChecked, changeCheck] = useState(false);
+
   const handleUpClick = () => {
     let newText = text.toLocaleUpperCase();
     setText(newText);
@@ -54,13 +56,26 @@ export default function TextForm(props) {
         <h1>{props.heading}</h1>
 
         <div className="mb-2" style={ctmStyle}>
-          <button
+          {/* <button
             className="d-flex btn btn-primary "
             value={themeText}
             onClick={changeTheme}
           >
             Enable/disable Dark Mode
-          </button>
+          </button> */}
+          <div class="form-check">
+            <input
+              style={{ borderColor: "blue" }}
+              class="form-check-input"
+              type="checkbox"
+              value={isChecked}
+              id="flexCheckDefault"
+              onChange={changeTheme}
+            />
+            <label class="form-check-label" for="flexCheckDefault">
+              Dark Mode
+            </label>
+          </div>
           <label htmlFor="myBox" className="form-label"></label>
           <textarea
             style={{
